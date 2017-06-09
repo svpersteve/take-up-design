@@ -1,0 +1,137 @@
+.u-center {
+  text-align: center;
+}
+
+.u-center--mobile {
+  @media #{$to-medium} {
+    text-align: center;
+  }
+}
+
+.u-left {
+  text-align: left;
+}
+
+.u-right {
+  text-align: right;
+}
+
+.u-no-border {
+  border: 0;
+
+  &:hover {
+    border: 0;
+  }
+}
+
+.u-hide-on-desktop {
+  @media #{$from-medium} {
+    display: none;
+  }
+}
+
+.u-hide-on-mobile {
+  @media #{$to-medium} {
+    display: none;
+  }
+}
+
+.u-float-left {
+  float: left;
+}
+
+.u-float-right {
+  float: right;
+}
+
+.u-float-right--desktop {
+  @media #{$from-medium} {
+    float: right;
+  }
+}
+
+.u-margin-top {
+  margin-top: 50px;
+}
+
+.u-margin-top--small {
+  margin-top: 25px;
+}
+
+.u-margin-bottom {
+  margin-bottom: 50px;
+}
+
+.u-margin-bottom--small {
+  margin-bottom: 25px;
+}
+
+.u-margin-top--desktop {
+  @media #{$from-medium} {
+    margin-top: 50px;
+  }
+}
+
+.u-margin-top--mobile {
+  @media #{$to-medium} {
+    margin-top: 50px;
+  }
+}
+
+.u-margin-bottom--none {
+  margin-bottom: 0;
+}
+
+.field_with_errors {
+  border: solid 2px $color-pink;
+}
+
+.u-padding {
+  padding: 20px;
+}
+
+.no-js .hide-if-no-js {
+  display: none;
+}
+
+.js .hide-if-js {
+  display: none;
+}
+
+.u-navbar-clear {
+  padding-top: $navbar-height;
+}
+
+.u-blue-line--thin {
+  border: solid 1px $color-blue;
+  width: 100%;
+
+  @media #{$from-medium} {
+    border: solid 2px $color-blue;
+  }
+}
+
+.js-reveal__hidden {
+  display: none;
+}
+
+.u-interval {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.u-small-text {
+  font-size: 14px;
+}
+
+.u-notification-icon {
+  padding: 0 5px 5px 0;
+}
+
+.u-center-page {
+  @include flex($direction: column);
+  height: 80vh;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}

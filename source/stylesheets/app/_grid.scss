@@ -1,0 +1,17 @@
+.m-grid {
+  @include flex($justify-content: space-between, $direction: column);
+
+  @media #{$from-medium} {
+    @include flex($justify-content: space-between);
+  }
+}
+
+.m-grid__box {
+  border: solid 1px $color-dark-grey;
+  padding: 50px;
+  margin-bottom: 50px;
+
+  @media #{$from-medium} {
+    margin-bottom: 0;
+  }
+}
